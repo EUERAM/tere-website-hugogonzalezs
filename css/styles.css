@@ -1,126 +1,337 @@
-/* VAriables i estils */
+/* VARIABLES AND STYLES */
 :root {
-	--white: rgba(255,255,255,1);
-	--green: rgba(117,191,122,1);
-	--black: rgba(0,0,0,1);
-	--light-gray: rgba(158,157,162,1);
-	--gray: rgba(139,139,165,1);
-	--dark-gray: rgba(39,32,66,1);
-	--background: rgba(249,249,249,1);
+  --white: rgba(255, 255, 255, 1);
+  --green: rgba(117, 191, 122, 1);
+  --black: rgba(0, 0, 0, 1);
+  --light-gray: rgba(158, 157, 162, 1);
+  --gray: rgba(139, 139, 165, 1);
+  --dark-gray: rgba(39, 32, 66, 1);
+  --background: rgba(249, 249, 249, 1);
 }
-.big-title {
-	font-size: 64px;
-	font-family: "Inter";
-	font-weight: 700;
-	font-style: normal;
-	line-height: 65.91px;
-	text-decoration: none;
-	text-transform: none;
+h1 {
+  font-size: 64px;
+  font-family: Inter;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 65.91px;
+  text-decoration: none;
+  text-transform: none;
 }
-.normal {
-	font-size: 18px;
-	font-family: "Inter";
-	font-weight: 500;
-	font-style: normal;
-	line-height: 26px;
-	text-decoration: none;
-	text-transform: none;
+p {
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 26px;
+  text-decoration: none;
+  text-transform: none;
+  margin: 0;
 }
-.description-hero {
-	font-size: 24px;
-	font-family: "Inter";
-	font-weight: 400;
-	font-style: normal;
-	line-height: 33px;
-	text-decoration: none;
-	text-transform: none;
-    color: var(--light-gray);
-}
-.how-it-works .description-hero{
-    text-align:center;
-    width:620px;
-    margin:auto;
+.description {
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 33px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--light-gray);
 }
 .button {
-	font-size: 24px;
-	font-family: Inter;
-	font-weight: 700;
-	font-style: normal;
-	text-decoration: none;
-	text-transform: none;
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
 }
-.section-title {
-	font-size: 47px;
-	font-family: Inter;
-	font-weight: 900;
-	font-style: normal;
-	line-height: 50.35px;
-	text-decoration: none;
-	text-transform: uppercase;
-    text-align:center;
+h2 {
+  font-size: 47px;
+  font-family: Inter;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 50.35px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
 }
-.section-subtitle {
-	font-size: 22px;
-	font-family: Inter;
-	font-weight: 800;
-	font-style: normal;
-	line-height: 50.35px;
-	text-decoration: none;
-	text-transform: none;
+h3 {
+  font-size: 22px;
+  font-family: Inter;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 50.35px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0;
 }
 .small-button {
-	font-size: 16px;
-	font-family: Inter;
-	font-weight: 700;
-	font-style: normal;
-	text-decoration: none;
-	text-transform: none;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
 }
 .small {
-	font-size: 16px;
-	font-family: Inter;
-	font-weight: 400;
-	font-style: normal;
-	text-decoration: none;
-	text-transform: none;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
 }
 
-header{
-    padding-top:80px;
+/* HEADER */
+header {
+  padding-top: 80px;
 }
-.container{
-    width: 1200px;
-    margin:auto;
-    
+.container {
+  width: 1280px;
+  margin: auto; /* place div in the center */
 }
-.flex{
-    display:flex;
-    justify-content: space-between;
+.flex {
+  display: flex;
+  justify-content: space-between;
 }
-header ul{
-    display: flex;
-    padding:0;
-    list-style: none;
+.menu ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  /* gap: 20px; */
 }
-header li{
-    padding:5px 30px;
+.menu a {
+  color: var(--Dark-gray, #272042);
+  /* Normal */
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 144.444% */
+  padding: 10px 30px;
+  text-decoration: none; /* get rid of underline */
+  transition: all 0.3s;
 }
-header a{
-    color: var(--Dark-gray, #272042);
-    font-family: "Inter";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 26px; /* 144.444% */
-    text-decoration: none; /* treure subratllat */
+.menu a:hover {
+  color: #75bf7a;
 }
-.green{
-    color: var(--green);
+.menu .btn-help {
+  border-radius: 5px;
+  background: var(--Green, #75bf7a);
+  color: white;
+}
+.menu .btn-help:hover {
+  color: white;
+  background-color: black;
 }
 
-/* Secció How Tere works */
-.how-it-works .row{
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap:40px;
+/* HOW IT WORKS */
+
+.how-it-works {
+  padding-top: 80px;
 }
+.how-it-works .step {
+  margin-bottom: 50px;
+}
+.how-it-works .description {
+  text-align: center;
+  width: 620px;
+  margin: auto;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 60px;
+}
+.how-it-works .number {
+  background-image: url("../img/step.png");
+  width: 62px;
+  height: 62px;
+  /* text styles */
+  color: #75bf7a;
+  text-align: center;
+  font-family: Inter;
+  font-size: 34.108px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 37.019px; /* 108.537% */
+  /* to get number into the center */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.green {
+  color: var(--green);
+}
+.text-right {
+  text-align: right;
+}
+.text-right .number {
+  margin-left: auto;
+}
+
+/* LINK SECTION */
+.link {
+  padding: 60px 0;
+}
+.link .container {
+  background: var(--green);
+  border-radius: 12px;
+  padding: 28px;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  align-items: center;
+  gap: 20px;
+}
+.link .description {
+  color: var(--white);
+  margin: 0;
+}
+.link .signup-form {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-self: end; /* align the form to the right side of its grid column */
+}
+.link .signup-form input[type="text"] {
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: none;
+  min-width: 300px;
+  font-size: 16px;
+}
+.link .signup-form input[type="text"]::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.link .signup-form .button {
+  /* use dark-gray (#272042) instead of pure black */
+  background: var(--dark-gray);
+  color: var(--white);
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.link .signup-form .button:hover {
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .link .container {
+    display: block;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .link .description {
+    max-width: 100%;
+    margin-bottom: 16px;
+  }
+  .link .signup-form {
+    justify-self: center; /* center when stacked */
+    justify-content: center;
+  }
+  .link .signup-form input[type="text"] {
+    min-width: 100%;
+  }
+}
+
+/* HERO COLUMNS: display left and right columns side-by-side */
+.hero .container.hero-columns {
+  display: flex;
+  gap: 40px;
+  /* Option A: align both columns to the bottom of the tallest column (the image) */
+  align-items: flex-end;
+}
+.hero .container.hero-columns .left-col {
+  flex: 1 1 50%;
+}
+.hero .container.hero-columns .right-col {
+  flex: 1 1 50%;
+}
+
+/* Make hero left column heading and paragraph share the same max width
+   so the paragraph is shorter on the right, matching the h1 */
+.hero .container.hero-columns .left-col h1,
+.hero .container.hero-columns .left-col .description {
+  /* keep heading and paragraph to the same readable measure */
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 0 16px 0;
+}
+
+@media (max-width: 900px) {
+  .hero .container.hero-columns .left-col h1,
+  .hero .container.hero-columns .left-col .description {
+    max-width: 100%;
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero .container.hero-columns {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
+
+/* Hero CTAs: filled buttons with icons (match .link button appearance) */
+.hero-ctas{
+  display:flex;
+  gap: 14px;
+  margin-top: 18px;
+}
+.hero-ctas .button,
+.hero-ctas .button1,
+.hero-ctas .button2{
+  /* match subscribe button color: dark gray (#272042) */
+  background: var(--dark-gray);
+  color: var(--white);
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero-ctas .button:hover,
+.hero-ctas .button1:hover,
+.hero-ctas .button2:hover{
+  opacity: 0.95;
+}
+.hero-ctas .icon{
+  /* support both image/svg and font icons; larger for visibility */
+  height: 37px;
+  width: auto;
+  display: inline-block;
+  font-size: 37px;
+  line-height: 1;
+}
+
+.visually-hidden{
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+/* Make sure hero buttons wrap or stack on small screens */
+@media (max-width: 480px){
+  .hero-ctas{ flex-direction: column; align-items: center; }
+  .hero-ctas .button{ width: 100%; max-width: 320px; justify-content: center; }
+}
+
+.hero .flex{
+	align-items: flex-end;
+}
+
+
+
+
+
